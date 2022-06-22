@@ -1,0 +1,152 @@
+[
+    {
+        "quest": "1) “Sinekli Bakkal” Romanının Yazarı Aşağıdakilerden Hangisidir?",
+        "answers": [
+            "Reşat Nuri Güntekin",
+            "Halide Edip Adıvar",
+            "Ziya Gökalp",
+            "Ömer Seyfettin"
+        ],
+        "correct": 1
+    },
+    {
+        "quest": "2) Aşağıda Verilen İlk Çağ Uygarlıklarından Hangisi Yazıyı İcat Etmiştir?",
+        "answers": [
+            "Hititler",
+            "Elamlar",
+            "Sümerler",
+            "Urartular"
+        ],
+        "correct": 2
+    },
+    {
+        "quest": "3) Tsunami Felaketinde En Fazla Zarar Gören Güney Asya Ülkesi Aşağıdakilerden Hangisidir?",
+        "answers": [
+            "Endonezya",
+            "Srilanka",
+            "Tayland",
+            "Hindistan"
+        ],
+        "correct": 0
+    },
+    {
+        "quest": "4) 2003 Yılında Euro Vizyon Şarkı Yarışmasında Ülkemizi Temsil Eden ve Yarışmada Birinci Gelen Sanatçımız Kimdir?",
+        "answers": [
+            "Grup Athena",
+            "Sertap Erener",
+            "Şebnem Paker",
+            "Ajda Pekkan"
+        ],
+        "correct": 1
+    },
+    {
+        "quest": "5) Mustafa Kemal Atatürk’ün Nüfusa Kayıtlı Olduğu İl Hangisidir?",
+        "answers": [
+            "Bursa",
+            "Ankara",
+            "İstanbul",
+            "Gaziantep"
+        ],
+        "correct": 3
+    },
+    {
+        "quest": "6)Aşağıdakilerden Hangisi Dünya Sağlık Örgütünün Kısaltılmış İsmidir?",
+        "answers": [
+            "Uhw",
+            "Unıcef",
+            "Who",
+            "Nato"
+        ],
+        "correct": 2
+    },
+    {
+        "quest": "7)Romen Rakamında Hangi Sayı Yoktur?",
+        "answers": [
+            "0",
+            "50",
+            "100",
+            "1000"
+        ],
+        "correct": 0
+    },
+    {
+        "quest": "8)Bir Gün Kaç Saniyedir?",
+        "answers": [
+            "86000",
+            "88600",
+            "86400",
+            "84800"
+        ],
+        "correct": 2
+    },
+    {
+        "quest": "9)Üç Büyük Dince Kutsal Sayılan Şehir Hangisidir?",
+        "answers": [
+            "Mekke",
+            "Kudüs",
+            "Roma",
+            "İstanbul"
+        ],
+        "correct": 1
+    },
+    {
+        "quest": "10)Hangi İlimizde Demiryolu Yoktur?",
+        "answers": [
+            "Batman",
+            "Kütahya",
+            "Aydın",
+            "Muğla"
+        ],
+        "correct": 3
+    },
+    {
+        "quest": "11)Hangi Ülkenin İki Tane Başkenti Vardır?",
+        "answers": [
+            "Güney Afrika",
+            "Senegal",
+            "El Salvador",
+            "Venezuela E-Kamboçya"
+        ],
+        "correct": 0
+    },
+    {
+        "quest": "12)Cevdet Bey ve Oğulları Eseri Kime Aittir?",
+        "answers": [
+            "Orhan Pamuk",
+            "Yahya Kemal Bayatlı",
+            "Atilla İlhan",
+            "Samipaşazade Sezai E-Ahmet Haşim"
+        ],
+        "correct": 0
+    },
+    {
+        "quest": "13)Bir Sebepten Dolayı Tek Kulağına Küpe Takan Osmanlı Padişahı Kimdir?",
+        "answers": [
+            "Kanuni Sultan Süleyman",
+            "Yavuz Sultan Selim",
+            "Orhan Bey",
+            "Fatih Sultan Selim E-II.Abdülhamit"
+        ],
+        "correct": 1
+    },
+    {
+        "quest": "14)Aşağıdaki Ülkelerden Hangisinin Nüfusu Daha Fazladır?",
+        "answers": [
+            "İspanya",
+            "Fransa",
+            "İngiltere",
+            "Almanya E-Türkiye"
+        ],
+        "correct": 3
+    },
+    {
+        "quest": "15) Aspirinin Hammaddesi Nedir?",
+        "answers": [
+            "Söğüt",
+            "Köknar",
+            "Kavak",
+            "Meşe E-Gürgen"
+        ],
+        "correct": 0
+    }
+]

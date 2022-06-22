@@ -1,0 +1,392 @@
+:root {
+    --background: black;
+    --color: #6495ed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+span {
+    display: inline-block;
+}
+
+body {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.frame {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    background: linear-gradient(30deg, rgba(82, 208, 227, 0), rgba(40, 24, 138, 0.5));
+}
+
+.frame1 {
+    z-index: 10;
+}
+
+.frame2 {}
+
+.frame3 {}
+
+.frame.hide {
+    visibility: hidden;
+}
+
+.frame.show {
+    z-index: 10;
+    visibility: visible;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+@keyframes client-to-right {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    100% {
+        transform: translate3d(100%, 0px, 0px);
+    }
+}
+
+@keyframes client-to-left {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    100% {
+        transform: translate3d(-100%, 0px, 0px);
+    }
+}
+
+@keyframes left-to-client {
+    0% {
+        transform: translate3d(-100%, 0px, 0px);
+
+    }
+
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+@keyframes right-to-client {
+    0% {
+        transform: translate3d(100%, 0px, 0px);
+
+    }
+
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+
+
+.frame1 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame1>.container {
+    width: 500px;
+    min-height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.frame1>.container>.c1 {
+    font-size: 30px;
+}
+
+
+
+.frame1>.container>.c3 input {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.frame1>.container>.c4 {
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame1>.container>.c4>button {
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 1px 1px #888888;
+}
+
+.frame1>.container>.c4>button:hover {
+    opacity: .8;
+}
+
+.frame2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame2>.container {
+    width: 500px;
+    min-height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(185, 173, 185, 0.642);
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.frame2>.container>.c1 {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.frame2>.container>.c1>span {
+    font-size: 1.5em;
+}
+
+.frame2>.container>.c1>.time {
+    width: 50px;
+    height: 50px;
+    background-color: #6495ed;
+    border-radius: 50%;
+}
+
+
+.frame2>.container>.c2.quest-container {
+    margin-top: 30px;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.frame2>.container>.c2.quest-container.question {}
+
+.frame2>.container>.c2.quest-container>.answers {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.frame2>.container>.c2.quest-container>.answers .ans {
+    width: 100%;
+    height: max-content;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+    border: 2px solid rgb(98, 95, 95);
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.frame2>.container>.c2.quest-container>.answers .ans:hover {
+    opacity: .7;
+}
+
+.frame2>.container>.c2.quest-container>.answers .ans.true {
+    background-color: green;
+    color: white;
+}
+
+.frame2>.container>.c2.quest-container>.answers .ans.false {
+    background-color: red;
+    color: white;
+}
+
+.frame2>.container>.c2.quest-container>.answers .ans.answered {
+    border: 4px solid black;
+}
+
+
+.frame2>.container>.c3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.frame2>.container>.c3>button {
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 1px 1px #888888;
+    font-weight: 500;
+}
+
+.frame2>.container>.c3 button:hover {
+    opacity: .8;
+}
+
+.frame3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame3>.container {
+    width: 500px;
+    min-height: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.frame3>.container>.c1 {
+    font-size: 2em;
+}
+
+.frame3>.container>.c2 {
+    display: flex;
+}
+
+.frame3>.container>.c3 {
+    display: flex;
+}
+
+.frame3>.container>.c2>.price {
+    color: green;
+}
+
+.frame3>.container>.c3>.price {
+    color: red;
+}
+
+
+
+
+
+
+
+.loading-frame {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    font-size: 10px;
+    z-index: 999;
+    color: white;
+}
+
+
+.loading-frame.anim-on {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loading-anim 2s cubic-bezier(0.165, 0.84, 0.44, 1) 0s infinite;
+
+}
+
+@keyframes loading-anim {
+    0% {
+        transform: translate(-50%, -50%) scale(.4);
+    }
+
+    30% {
+        transform: translate(-50%, -50%) scale(1);
+
+    }
+
+    55% {
+        transform: translate(-50%, -50%) scale(.4);
+
+    }
+
+    75% {
+        transform: translate(-50%, -50%) scale(1);
+
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(.4);
+
+    }
+}
+
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .frame1>.container {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .frame2>.container {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .frame3>.container {
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

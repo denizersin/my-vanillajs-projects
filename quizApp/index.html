@@ -1,0 +1,87 @@
+<html>
+
+<head>
+  <title>JavaScript</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/0f0eb67db4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="frame frame1 show">
+    <div class="container">
+      <div class="c c1">
+        <span>Take a Quiz</span>
+      </div>
+      <div class="c c2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nihil rem excepturi neque, porro impedit nam in
+        quibusdam totam? Possimus, natus cupiditate? Quidem delectus ea, porro at explicabo animi modi.
+      </div>
+      <div class="c c3">
+        <input type="number" id="quantity" name="quantity" min="1" max="15" value="1">
+      </div>
+      <div class="c c4">
+        <button id="start">Start Quiz</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="frame frame2 takequiz hide">
+
+    <div class="container">
+
+      <div class="c c1">
+        <span class="order-text">1</span>
+        <div class="time"></div>
+      </div>
+
+      <!-- <div class="c c2 quest-container">
+        <div class="question">2003 Yılında Euro Vizyon Şarkı Yarışmasında Ülkemizi Temsil Eden ve Yarışmada Birinci
+          Gelen Sanatçımız Kimdir?</div>
+        <div class="answers">
+          <div class="ans ans1 ">ans1</div>
+          <div class="ans ans2 ">ans1</div>
+          <div class="ans ans3">ans1</div>
+          <div class="ans ans4">ans1</div>
+        </div>
+      </div> -->
+
+      <div class="c c3">
+        <button id="prev">prev quest</button>
+        <button id="next">next quest</button>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="frame frame3 show-result hide">
+
+    <div class="container">
+      <div class="c c1">
+        <span>Quiz has ended</span>
+      </div>
+      <div class="c c2">
+        <span class="correct">Correct Answers:</span> <span class="price">X</span>
+      </div>
+      <div class="c c3">
+        <span class="wrong">Wrong Answers:</span> <span class="price">Y</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="loading-frame">
+    yukleniyor
+  </div>
+
+  <script src="app.js" async></script>
+</body>
+
+</html>
