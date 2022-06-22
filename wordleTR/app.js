@@ -35,7 +35,12 @@ enterBtn.addEventListener('click', e => {
     if (currCol != 5) return;
     let currTxt = currentWord.join('');
     if (!words.includes(currTxt)) {
-        wrdMtrx[currRow].forEach(e => { e.innerHTML = '' })
+        alert('boyle bir kelime yok')
+        wrdMtrx[currRow].forEach(e => {
+            e.style.animation = 'scale-anim1 .2s linear';
+            setTimeout(k => { e.style.animation = ''; }, 200);
+            e.innerHTML = ''
+        });
         currentWord = []; currCol = 0;
         return;
     }
