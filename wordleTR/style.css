@@ -155,3 +155,30 @@
         transform: scale(1);
     }
 }
+
+@keyframes alert {
+
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    20% {
+        transform: translate3d(20px, 0px, 0px);
+    }
+
+    40% {
+        transform: translate3d(-20px, 0px, 0px);
+    }
+
+    60% {
+        transform: translate3d(20px, 0px, 0px);
+    }
+
+    80% {
+        transform: translate3d(-20px, 0px, 0px);
+    }
+
+    100% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+}

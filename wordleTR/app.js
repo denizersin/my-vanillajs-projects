@@ -1,5 +1,5 @@
 let rand = Math.floor((Math.random() * (words.length / 5))) * 5;
-let answer = words.substring(rand, rand + 5);
+let answer = words.substring(rand, rand + 5).toUpperCase();
 console.log(answer);
 let answer2 = answer.split('');
 let currRow = 0, currCol = 0;
@@ -11,37 +11,50 @@ const keys = Array.from(document.querySelectorAll('.container2>.kr>.c.letter'));
 const enterBtn = document.getElementById('enter')
 const deleteBtn = document.getElementById('delete')
 
-
+let turkisLetters = 'ĞÜŞİÇÖ';
+console.log(turkisLetters.includes('Ş'));
 
 let currentWord = [];
 //keyClickEvents
-keys.forEach(el => {
-    el.addEventListener('click', e => {
-        if (currCol == 5) return;
-        wrdMtrx[currRow][currCol].innerHTML = el.firstElementChild.innerHTML;
-        wrdMtrx[currRow][currCol].style.animation = 'scale-anim1 .2s linear';
-        let col = currCol;
-        setTimeout(() => {
-            wrdMtrx[currRow][col].style.animation = ''
-        }, 200);
-        currentWord.push(el.firstElementChild.innerHTML);
-        currCol++;
-    })
+keys.forEach(el => { el.addEventListener('click', onKeyClick) });
+
+function onKeyClick(e) {
+    if (currCol == 5) return;
+    let key = typeof e == "object" ? e.currentTarget.firstElementChild.innerHTML : e;
+    wrdMtrx[currRow][currCol].innerHTML = key;
+    wrdMtrx[currRow][currCol].style.animation = 'scale-anim1 .2s linear';
+    let col = currCol;
+    setTimeout(() => {
+        wrdMtrx[currRow][col].style.animation = ''
+    }, 200);
+    currentWord.push(key);
+    currCol++;
+}
+document.documentElement.addEventListener('keydown', e => {
+    let key = e.key.toUpperCase();
+    if (key == 'BACKSPACE') onDelteKey();
+    else if (key == 'ENTER') onEnterKey();
+    else if (key.length == 1 && (key.charCodeAt() >= 65 && key.charCodeAt() <= 90) || turkisLetters.includes(key)) {
+        onKeyClick(key);
+    }
+
 })
 
 let colorArr;
 //ENTERBTN
-enterBtn.addEventListener('click', e => {
+enterBtn.addEventListener('click', onEnterKey);
+
+function onEnterKey(e) {
     if (currCol != 5) return;
     let currTxt = currentWord.join('');
     if (!words.includes(currTxt)) {
-        alert('boyle bir kelime yok')
-        wrdMtrx[currRow].forEach(e => {
-            e.style.animation = 'scale-anim1 .2s linear';
-            setTimeout(k => { e.style.animation = ''; }, 200);
-            e.innerHTML = ''
-        });
-        currentWord = []; currCol = 0;
+        wrdMtrx[currRow][0].parentElement.style.animation = `alert .5s ease`;
+        setTimeout(() => {
+            wrdMtrx[currRow].forEach(e => { e.innerHTML = '' })
+            currentWord = []; currCol = 0;
+            wrdMtrx[currRow][0].parentElement.style.animation = ``;
+        }, 500);
+
         return;
     }
     colorArr = [0, 0, 0, 0, 0];
@@ -81,10 +94,11 @@ enterBtn.addEventListener('click', e => {
     currCol = 0;
     currentWord = [];
     answer2 = answer.split('');
-});
+}
 
 //delet Btn
-deleteBtn.addEventListener('click', e => {
+deleteBtn.addEventListener('click', onDelteKey);
+function onDelteKey(e) {
     if (currCol == 0) return;
     currCol--;
     currentWord.pop();
@@ -94,7 +108,8 @@ deleteBtn.addEventListener('click', e => {
     setTimeout(() => {
         wrdMtrx[currRow][col].style.animation = '';
     }, 200);
-})
+
+}
 
 //PrintKey with given color if it is possible
 function printKey(letter, color) {
