@@ -1,7 +1,7 @@
 
 # My vanilla JS projects
 
-to improve my javascript skills by making some simple single page projects.
+i am making some simple single page projects to improve my JS skills.
 
 ## 🛠 Skills
 Javascript, HTML, CSS, SCSS...
