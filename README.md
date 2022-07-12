@@ -26,3 +26,7 @@ Javascript, HTML, CSS, SCSS...
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 896f0f811303606ddd3262d69c4a2775e643bb50
