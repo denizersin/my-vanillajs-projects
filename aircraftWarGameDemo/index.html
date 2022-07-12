@@ -1,0 +1,47 @@
+<html>
+
+<head>
+  <title>JavaScript</title>
+  <script src="node_modules/traceur/bin/traceur.js"></script>
+  <script src="node_modules/es6-module-loader/dist/es6-module-loader-dev.js"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Fredoka:wght@300&family=Montserrat:wght@100;400;600;700&family=Noto+Sans&family=Prompt:wght@600&display=swap"
+    rel="stylesheet">
+  <link href="http://fonts.cdnfonts.com/css/librium-libritabs" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="canvasContainer">
+      <canvas id="canvas" width="390" height="700"></canvas>
+      <div id="skillContainer">
+
+        <button id="rocketUltiBtn" style="display:none"></button>
+        <button id="protectBtn" style="display:none"></button>
+      </div>
+      <button class="start-btn">START</button>
+      <div class="levelContainer">
+        <span class="text" style="display:none">LEVEL 1</span>
+      </div>
+    </div>
+
+  </div>
+  <audio src="fire1.mp3"></audio>
+  <img src="./src/items/exEnemies/diff3/enemyx/Aircraft_10.png" style=" border: 1px solid black;" alt="">
+  <script src="app.js">
+  </script>
+  <script>
+    let lists = document.querySelectorAll('*');
+    lists.forEach(e => {
+      if (typeof e.className == 'string'&& e.className.slice('').includes('google')) {
+        e.style.display="none";
+      }
+    })
+  </script>
+</body>
+
+</html>

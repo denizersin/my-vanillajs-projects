@@ -1,0 +1,46 @@
+{
+    "burstsAssets": {
+        "squareBombAnim": {
+            "name": "squareBombAnim",
+            "w": "650",
+            "h": "650",
+            "size": "square",
+            "pieces": "5",
+            "imageName": "squareBombAnim.png",
+            "image": ""
+        }
+    },
+    "enmMovementMethods": {
+        "move1": "let self = this; let random = (Math.random()*0.010 + 0.05); this.dVx = 0.014;if (self.x > CANVAS_WIDTH / 2) this.dVx *= -1;setInterval(() => {let rnd2 = Math.floor(Math.random() * 3) * 500; setTimeout(() => {self.Vx = 0;if (self.x < 0) {self.dVx = Math.abs(self.dVx);}else if (self.x > CANVAS_WIDTH - self.w / 2) {self.dVx = -1 * Math.abs(self.dVx);}else { self.dVx *= -1;  } }, rnd2); }, 1000);",
+        "move2": "let self = this; let random = (Math.random() * 0.010 + 0.05); this.dVx = 0.014; let dVyVal = 0.002; if (self.x > CANVAS_WIDTH / 2) this.dVx *= -1; setInterval(() => {let i = 0;let rnd2 = Math.floor(Math.random() * 3) * 500; setTimeout(() => {self.dVy = i % 2 == 0 ? dVyVal : 0;i++;self.Vx = 0; if (self.x < 0) { self.dVx = Math.abs(self.dVx); } else if (self.x > CANVAS_WIDTH - self.w / 2) { self.dVx = -1 * Math.abs(self.dVx); } else { self.dVx *= -1; }}, rnd2);}, 1500);"
+    },
+    "burstsAssets": {
+        "squareBombAnim": {
+            "name": "squareBombAnim",
+            "w": "650",
+            "h": "650",
+            "size": "square",
+            "pieces": "5",
+            "imageName": "squareBombAnim.png",
+            "image": ""
+        }
+    },
+    "enmMovementMethods": {
+        "move1": "let self = this; let random = (Math.random()*0.010 + 0.05); this.dVx = 0.014;if (self.x > CANVAS_WIDTH / 2) this.dVx *= -1;setInterval(() => {let rnd2 = Math.floor(Math.random() * 3) * 500; setTimeout(() => {self.Vx = 0;if (self.x < 0) {self.dVx = Math.abs(self.dVx);}else if (self.x > CANVAS_WIDTH - self.w / 2) {self.dVx = -1 * Math.abs(self.dVx);}else { self.dVx *= -1;  } }, rnd2); }, 1000);",
+        "move2": "let self = this; let random = (Math.random() * 0.010 + 0.05); this.dVx = 0.014; let dVyVal = 0.002; if (self.x > CANVAS_WIDTH / 2) this.dVx *= -1; setInterval(() => {let i = 0;let rnd2 = Math.floor(Math.random() * 3) * 500; setTimeout(() => {self.dVy = i % 2 == 0 ? dVyVal : 0;i++;self.Vx = 0; if (self.x < 0) { self.dVx = Math.abs(self.dVx); } else if (self.x > CANVAS_WIDTH - self.w / 2) { self.dVx = -1 * Math.abs(self.dVx); } else { self.dVx *= -1; }}, rnd2);}, 1500);"
+    },
+    "gameAssets": {
+        "main1.png": "",
+        "main1hit.png": "",
+        "aircraft1.png": "",
+        "aircraft1hit.png": "",
+        "aircraft10.png": "",
+        "aircraft10hit.png": "",
+        "rocket1.png": "",
+        "circleBullet1.png": "",
+        "blueRectBullet.png": "",
+        "yellowRectBullet.png": "",
+        "purpleRectBullet.png": "",
+        "protect.png": ""
+    }
+}

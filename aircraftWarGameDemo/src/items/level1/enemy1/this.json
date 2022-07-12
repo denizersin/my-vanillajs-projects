@@ -1,0 +1,58 @@
+{
+    "objProps": {
+        "startHealth": "60",
+        "currentHealth": "500",
+        "delay": "0",
+        "image": "aircraft1.png",
+        "hitImage": "aircraft1hit.png",
+        "x": "0",
+        "y": "0",
+        "Vx": "0",
+        "Vy": "1",
+        "dVx": "0",
+        "dVy": "0",
+        "h": "86",
+        "w": "110",
+        "isEnemy": true,
+        "movementName": "move2",
+        "setMovement": "",
+        "repeat": "2"
+    },
+    "collisionRects": [
+        [
+            "34",
+            "5",
+            "47",
+            "18"
+        ],
+        [
+            "4",
+            "44",
+            "105",
+            "28"
+        ],
+        [
+            "50",
+            "74",
+            "15",
+            "12"
+        ]
+    ],
+    "bulletsProps": [
+        {
+            "isEnemy": true,
+            "type": "rect",
+            "direction": "constant-linear",
+            "image": "blueRectBullet.png",
+            "x": "51",
+            "y": "64",
+            "aw": "10",
+            "ah": "26",
+            "w": "10",
+            "h": "26",
+            "Vx": "0",
+            "Vy": "6",
+            "power": "0.5"
+        }
+    ]
+}

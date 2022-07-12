@@ -1,0 +1,112 @@
+:root {
+    --background: black;
+    --color: #6495ed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+    font-family: 'Libritabs', sans-serif;
+
+}
+
+.container {
+    background-color: red;
+    width: 100vw;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.canvasContainer {
+    display: flex;
+    width: 390;
+    height: 700px;
+    position: relative;
+}
+
+#canvas {
+    display: block;
+    background-color: black;
+    position: relative;
+}
+
+#skillContainer {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    background: transparent;
+    height: auto;
+    width: 90px;
+    right: 20px;
+    bottom: 10px;
+
+}
+
+#skillContainer>#rocketUltiBtn {
+    border-radius: 50%;
+    background-image: url("src/items/gameAssets/rocket1.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+}
+
+#protectBtn {
+    border-radius: 50%;
+
+    background-image: url("src/items/main-aircraft/shield.png");
+    background-position: center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.start-btn {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 50px;
+}
+
+.levelContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.levelContainer span {
+    font-size: 20px;
+    display: inline-block;
+    transform: scale(2);
+    color: white;
+    background-color: black;
+}
+
+@keyframes level_anim {
+    0% {
+        transform: scale(2);
+    }
+
+    66% {
+        transform: scale(4);
+
+    }
+
+    100% {
+        transform: scale(2);
+    }
+}
+
+.levelAnim {
+    animation: level_anim 2s;
+}

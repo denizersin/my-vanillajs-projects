@@ -1,0 +1,136 @@
+{
+    "objProps": {
+        "startHealth": "40",
+        "currentHealth": "40",
+        "delay": "0",
+        "image": "main1.png",
+        "hitImage": "main1hit.png",
+        "x": "0",
+        "y": "0",
+        "Vx": "0",
+        "Vy": "0",
+        "dVx": "0",
+        "dVy": "0",
+        "h": "86",
+        "w": "116",
+        "movementName": "none",
+        "isEnemy": false
+    },
+    "collisionRects": [
+        [
+            "46",
+            "0",
+            "18",
+            "18"
+        ],
+        [
+            "4",
+            "15",
+            "105",
+            "28"
+        ]
+    ],
+    "assets": {
+        "images": [
+            "aircraft1.png",
+            "aircraft1hit.png",
+            "protect.png",
+            "bullet-noise.png",
+            "bullet-wing.png",
+            "noise.png",
+            "rocket2.png"
+        ]
+    },
+    "bulletsProps": [
+        {
+            "isEnemy": false,
+            "type": "circle",
+            "direction": "guided-parabolic",
+            "image": "circleBullet1.png",
+            "x": "50",
+            "y": "26",
+            "aw": "9",
+            "ah": "9",
+            "w": "15",
+            "h": "15",
+            "Vx": "0",
+            "Vy": "8",
+            "power": "15"
+        },
+        {
+            "isEnemy": false,
+            "type": "rect",
+            "direction": "constant-linear",
+            "image": "purpleRectBullet.png",
+            "x": "10",
+            "y": "20",
+            "aw": "10",
+            "ah": "26",
+            "w": "10",
+            "h": "26",
+            "Vx": "0",
+            "Vy": "6",
+            "power": "5"
+        },
+        {
+            "isEnemy": false,
+            "type": "rect",
+            "direction": "constant-linear",
+            "image": "yellowRectBullet.png",
+            "x": "30",
+            "y": "16",
+            "aw": "10",
+            "ah": "26",
+            "w": "10",
+            "h": "26",
+            "Vx": "0",
+            "Vy": "7",
+            "power": "5"
+        },
+        {
+            "isEnemy": false,
+            "type": "rect",
+            "direction": "constant-linear",
+            "image": "yellowRectBullet.png",
+            "x": "71",
+            "y": "16",
+            "aw": "10",
+            "ah": "26",
+            "w": "10",
+            "h": "26",
+            "Vx": "0",
+            "Vy": "7",
+            "power": "5"
+        },
+        {
+            "isEnemy": false,
+            "type": "rect",
+            "direction": "constant-linear",
+            "image": "purpleRectBullet.png",
+            "x": "92",
+            "y": "10",
+            "aw": "10",
+            "ah": "26",
+            "w": "10",
+            "h": "26",
+            "Vx": "0",
+            "Vy": "6",
+            "power": "5"
+        }
+    ],
+    "ultiRocketProps": {
+        "isEnemy": false,
+        "type": "rect-rocket",
+        "direction": "constant-linear",
+        "image": "rocket1.png",
+        "x": "0",
+        "y": "0",
+        "aw": "7",
+        "ah": "20",
+        "w": "14",
+        "h": "40",
+        "Vx": "0",
+        "Vy": "9",
+        "power": "30"
+    }
+}
